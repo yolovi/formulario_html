@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>El club viejuner</h2><hr>
+    <h2>El club viejuner</h2>
+    <hr>
     <form action="">Cuéntanos un poco sobre ti
         <div>
             <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
@@ -18,23 +21,22 @@
         <div>
             <input type="radio" id="sexoOpcion" name="sexo" value="hombre" />
             <label for="sexoOpcion">Hombre</label>
-      
+
             <input type="radio" id="sexoOpcion" name="sexo" value="mujer" />
             <label for="sexoOpcion">Mujer</label>
         </div>
 
         <div>
             Como te sientes:
-           <input type="checkbox" name="joven" id="joven">
+            <input type="checkbox" name="joven" id="joven">
             <label for="joven">Más joven que nunca</label>
-           <input type="checkbox" name="madurito" id="madurito"> 
-           <label for="madurito">Ni tan mal</label>
-           <input type="checkbox" name= anciano id="anciano"> 
-           <label for="anciano">No me puedo ni mover</label>
+            <input type="checkbox" name="madurito" id="madurito">
+            <label for="madurito">Ni tan mal</label>
+            <input type="checkbox" name=anciano id="anciano">
+            <label for="anciano">No me puedo ni mover</label>
         </div>
-
         <div>
-            <textarea id="sobreTi" name="sobreTi"rows="5" cols="33"> Escribe algo sobre ti
+            <textarea id="sobreTi" name="sobreTi" rows="5" cols="33"> Escribe algo sobre ti
             </textarea>
         </div>
         <div>
@@ -44,54 +46,88 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <h2>Los ladronzuelos de bicicletas</h2><hr>
+    <h2>Los ladronzuelos de bicicletas</h2>
+    <hr>
     <form action="">
-        <p> Cuando desapareció su bicilceta</p>
+        <p> Cuando desapareció su bicicleta</p>
         <div>
-            <label for="fecha">Seleccione fecha:</label>     
-            <input type="date" id="fecha" name="fecha" value="2023-05-23" min="2022-01-01" max="2025-12-31"> 
-        </div>  
+            <label for="fecha">Seleccione fecha:</label>
+            <input type="date" id="fecha" name="fecha" value="2023-05-23" min="2022-01-01" max="2025-12-31">
+        </div>
         <div>
-            <label for="hora">Seleccione hora:</label>     
-            <input type="time" id="hora" name="hora" value="" > 
+            <label for="hora">Seleccione hora:</label>
+            <input type="time" id="hora" name="hora" value="">
         </div>
         <p> Describa su bicicleta</p>
         <div>
+            <label for="color">Color</label>
             <input type="color" name="colorBicicleta" id="colorBicicleta">
         </div>
-        <input type="range">
-        <input type="text">
+        <div>
+            <label for="precio">Precio aproximado</label>
+            <input type="range" name="precio" id="precio" min="0" max="500" value="90" step="50">
+        </div>
+        <div>
+            <label for="bici-opc">Escoge un tipo de bicicleta:</label>
+            <select name="bici-opc" id="bici-opc">
+                <optgroup label="Paseo">
+                    <option>Señorial</option>
+                    <option>Anti-plebeyo</option>
+                    <option>Por Encima Del Hombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option>Gamusinos</option>
+                    <option>Hueleflores premium</option>
+                    <option>Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option>Metroymedio</option>
+                    <option>3 de la tarde. Fluorescente edition</option>
+                    <option>Grupitors</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <p>Seleccione los accesorios (puede seleccionar varios con la tecla SHIFT o CTRL):</p>
+            <select name="accesorios" id="accesorios" multiple>
+                <option value="ruedines">Ruedines</option>
+                <option value="pegatinas">Pegatinas</option>
+                <option value="bomba-aire">Bomba de aire</option>
+                <option value="timbre">Timbre</option>
+                <option value="foco">foco</option>
+            </select>
+        </div>
+        <div>
+            <label>Seleccione la marca:
+                <input list="marca" name="myBrowser" /></label>
+            <datalist id="marca">
+                <option value="specialized">
+                <option value="trek">
+                <option value="merida">
+                <option value="scott">
+                <option value="giant">
+                <option value="cube">
+                <option value="lapierre">
+                <option value="orbea">
+                <option value="cannondale">
+                <option value="bmc">
+                <option value="canyon">
+                <option value="look">
+                <option value="protek">
+                <option value="megamo">
+                <option value="pinarello">
+                <option value="bianchi">
+                <option value="bh">
+                <option value="factor">
+                <option value="ghost">
+                <option value="cervélo">
+                <option value="argon">
+            </datalist>
+        </div>
+
     </form>
 
 
 </body>
+
 </html>
-
-
-<hr>  
-
-<!-- Los ladronzuelos de bicicletas
-Día: fecha
-
-Hora: tiempo
-
-Color de la bicicleta: color
-
-Rango de precio: range
-
-Tipo de bicicleta: selector
-    Paseo
-        Señorial
-        Anti-plebeyos
-        PorEncimaDelHombro
-
-    Montaña
-        Gamusinos
-        Hueleflores premium
-        Fango lover
-
-    Carreras
-        Metroymedio
-        3 de la tarde. Fluorescente edition
-        Grupitors
-VER EL EJERCICIO EN GIT -->
