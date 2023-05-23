@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>El club viejuner</h2><hr>
+    <form action="">Cuéntanos un poco sobre ti
+        <div>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+            <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos">
+            <input type="number" name="edad" id="edad" placeholder="Tu edad">
+        </div>
+
+        <div>
+            <input type="radio" id="sexoOpcion" name="sexo" value="hombre" />
+            <label for="sexoOpcion">Hombre</label>
+      
+            <input type="radio" id="sexoOpcion" name="sexo" value="mujer" />
+            <label for="sexoOpcion">Mujer</label>
+        </div>
+
+        <div>
+            Como te sientes:
+           <input type="checkbox" name="joven" id="joven">
+            <label for="joven">Más joven que nunca</label>
+           <input type="checkbox" name="madurito" id="madurito"> 
+           <label for="madurito">Ni tan mal</label>
+           <input type="checkbox" name= anciano id="anciano"> 
+           <label for="anciano">No me puedo ni mover</label>
+        </div>
+
+        <div>
+            <textarea id="sobreTi" name="sobreTi"rows="5" cols="33"> Escribe algo sobre ti
+            </textarea>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Tu email">
+            <input type="tel" name="telefono" id="telefono" placeholder="Tu telefono">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Los ladronzuelos de bicicletas</h2><hr>
+    <form action="">
+        <p> Cuando desapareció su bicilceta</p>
+        <div>
+            <label for="fecha">Seleccione fecha:</label>     
+            <input type="date" id="fecha" name="fecha" value="2023-05-23" min="2022-01-01" max="2025-12-31"> 
+        </div>  
+        <div>
+            <label for="hora">Seleccione hora:</label>     
+            <input type="time" id="hora" name="hora" value="" > 
+        </div>
+        <p> Describa su bicicleta</p>
+        <div>
+            <input type="color" name="colorBicicleta" id="colorBicicleta">
+        </div>
+        <input type="range">
+        <input type="text">
+    </form>
+
+
+</body>
+</html>
+
+
+<hr>  
+
+<!-- Los ladronzuelos de bicicletas
+Día: fecha
+
+Hora: tiempo
+
+Color de la bicicleta: color
+
+Rango de precio: range
+
+Tipo de bicicleta: selector
+    Paseo
+        Señorial
+        Anti-plebeyos
+        PorEncimaDelHombro
+
+    Montaña
+        Gamusinos
+        Hueleflores premium
+        Fango lover
+
+    Carreras
+        Metroymedio
+        3 de la tarde. Fluorescente edition
+        Grupitors
+VER EL EJERCICIO EN GIT -->
